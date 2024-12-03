@@ -31,6 +31,11 @@
             margin-top: 30px;
         }
 
+        h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
         h4 {
             margin-bottom: 0px;
         }
@@ -51,31 +56,8 @@
             margin-bottom: 20px;
         }
 
-        .section h3 {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-
         .sub-info {
             font-size: 14px;
-            color: #555;
-            margin-bottom: 0px;
-            margin-top: 10px;
-        }
-
-        .about-section {
-            padding: 50px;
-            text-align: center;
-            color: white;
-            min-height: 100%;
-            height: 300px;
-            background-color: black;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .title-info {
-            font-size: 15px;
             color: #555;
             margin-bottom: 0px;
             margin-top: 10px;
@@ -95,74 +77,15 @@
             font-size: 14px;
         }
 
-        .typewriter {
-            color: #fff;
-            font-family: monospace;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-            white-space: nowrap; /* Keeps the content on a single line */
-            margin: 10px auto; /* Centers the text */
-            letter-spacing: 0.15em; /* Adjust spacing as needed */
-        }
-
-        /* Typing effect for the first line */
-        .first-line {
-            font-size: 2.5rem;
-            overflow: hidden;
-            white-space: nowrap;
-            width: 0;
-            animation:
-                    typing 4s steps(30, end) forwards;
-            animation-delay: 0s;
-        }
-
-        /* Typing effect for the second line */
-        .second-line {
-            overflow: hidden;
-            white-space: nowrap;
-            width: 0;
-            animation:
-                    typing 4s steps(30, end) forwards;
-            animation-delay: 2s;
-        }
-
-        /* Typing effect for the third line */
-        .third-line {
-            overflow: hidden;
-            white-space: nowrap;
-            width: 0;
-            animation:
-                    typing 4s steps(30, end) forwards;
-            animation-delay: 6s;
-        }
-
-        /* Typing effect for the third line */
-        .forth-line {
-            overflow: hidden;
-            white-space: nowrap;
-            width: 0;
-            animation:
-                    typing 4s steps(30, end) forwards;
-            animation-delay: 10s;
-        }
-
-        /* Typing animation */
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        /* Cursor blink effect */
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: orange; }
+        .title-info {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 0px;
+            margin-top: 10px;
         }
 
         .school {
             margin-bottom: 10px;
-        }
-
-        .contact {
-            margin: 0px;
         }
 
         .language {
@@ -172,18 +95,12 @@
     </style>
 </head>
 <body>
-<!--<div style="background-image: url('black-cat.gif');" class="about-section">-->
-<!--    <h1 class="typewriter first-line">Hello, It's me, Anh!</h1>-->
-<!--    <p class="typewriter second-line">"I’m a software developer with 4+ years of experience in Go, Node.js, React, MongoDB, and SQL."-->
-<!--    <p class="typewriter third-line">"I enjoy solving problems, learning new skills, and exploring languages and technologies."-->
-<!--    <p class="typewriter forth-line">"Check out my CV below for more information!"-->
-<!--    </p>-->
-<!--</div>-->
 <div class="container">
     <!-- Header -->
     <h1>Do Thi Ngoc Anh</h1>
     <p class="contact">Phone: <span>(+84) 399082929</span></p>
     <p class="contact">Email: <span>doanhit1268@gmail.com</span></p>
+
     <!-- Experience Section -->
     <div class="section">
         <h2>Experience</h2>
@@ -191,16 +108,40 @@
             <h3>VW Tech</h3>
             <p class="title-info">FullStack JS developer | Dec 2021 – Nov 2024</p>
             <ul>
+                <li>Actively contributed in various roles, ranging from developing the frontend with React to building APIs with Node.js, optimizing API queries and database performance, and conducting research to integrate cloud services</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Flodesk.com</h3>
+            <p class="title-info">Go developer | Apr 2020 – Sep 2021</p>
+            <ul>
+                <li>Self-taught Go to meet project demands, taking responsibility for various tasks including developing new features, writing integration tests, integrating with third-party services, and migrating parts of the Node.js codebase to Go for improved performance and maintainability</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Positive Thinking Company</h3>
+            <p class="title-info">BE Intern - Node.js Developer | Apr 2019 - Mar 2020</p>
+            <ul>
+                <li>As a Node.js Developer, I worked collaboratively with team members and business owners to finalize tasks, design and implement solutions, write unit tests, and create Swagger documentation. I focused on improving API performance and ensuring that the product met quality standards.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section">
+        <h2>Projects</h2>
+        <div>
+            <h3>Accountant</h3>
+            <ul>
+                <li>Accountant is a web application designed to collect customer data and process it to generate final reports for end-users.</li>
                 <li>Maintained, updated, and developed new features for the company’s products.</li>
                 <li>Optimized DB queries (indexing and query batching) and improved APIs performance (caching)</li>
                 <li>Reduced report generation time by leveraging parallel processing across CPU cores, increasing efficiency by 30%</li>
                 <li>Researched and integrated cloud services, implementing auto-scaling to optimize server performance</li>
             </ul>
         </div>
-
         <div>
             <h3>Flodesk.com</h3>
-            <p class="title-info">Go developer | Apr 2020 – Sep 2021</p>
             <ul>
                 <li>Developed APIs for the admin dashboard to manage user info, subscriber data, and email analytics</li>
                 <li>Set up and maintained integration tests in the backend Go codebase</li>
@@ -209,17 +150,13 @@
                 <li>Migrated parts of the codebase from Node.js to Go to improve performance and maintainability</li>
             </ul>
         </div>
-
         <div>
-            <h3>Positive Thinking Company</h3>
-            <p class="title-info">BE Intern - Nodejs Developer | Apr 2019 - Mar 2020 </p>
-            <div class="projects">
-                <ul>
-                    <li>Built CRUD APIs and collaborated with the team to analyze and finalize requirements</li>
-                    <li>Wrote unit tests and conducted code reviews to ensure high-quality deliverables</li>
-                    <li>Developed features for game microservices, such as transaction handling and reward collection</li>
-                </ul>
-            </div>
+            <h3>Olympics Game 2020 Application</h3>
+            <ul>
+                <li>Built CRUD APIs and collaborated with the team to analyze and finalize requirements</li>
+                <li>Wrote unit tests and conducted code reviews to ensure high-quality deliverables</li>
+                <li>Developed features for game microservices, such as transaction handling and reward collection</li>
+            </ul>
         </div>
     </div>
 
@@ -249,7 +186,7 @@
             <p class="sub-info">Recipient of an English scholarship from MGM Technology Partners Vietnam</p>
         </div>
         <div class="language">
-        <b>Language</b>
+            <b>Language</b>
             <p class="sub-info"><b>English</b>: B2 – Effective communication in professional environments</p>
             <p class="sub-info"><b>Chinese</b>: HSK3 – Proficient at basic reading, writing, and conversation</p>
         </div>
